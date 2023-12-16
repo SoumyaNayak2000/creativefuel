@@ -10,7 +10,6 @@
 } 
 ```
 - Copy the content inside db.json and start the json server by below command and enjoy the services.
-- ### npx json-server --watch db.json --port 3001
 
 ## Table of Contents
 
@@ -47,7 +46,7 @@ Step-by-step instructions on how to install and set up the project.
 
 ```bash
 # Clone my code to your local system
- git clone https://github.com/SoumyaNayak2000/cfreative-fuel-assignment.git
+ git clone https://github.com/SoumyaNayak2000/creativefuel.git
 cd <foldername>
 
 # install the dependencies
