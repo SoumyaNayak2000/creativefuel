@@ -11,7 +11,7 @@ const AddTester = () => {
   const [testTypeId, setTestTypeId] = useState(-"");
   const [data, setData] = useState([]);
 
-  const url = "http://localhost:3001/test_type";
+  const url = "https://creativefuel.onrender.com/test_type";
   useEffect(() => {
     getTestDetails();
   }, []);
@@ -81,7 +81,7 @@ const AddTester = () => {
 
       formData.set("testtypeid", testTypeId);
 
-      const url = "http://localhost:3001/test_mast";
+      const url = "https://creativefuel.onrender.com/test_mast";
       fetch(url, {
         method: "POST",
         headers: {

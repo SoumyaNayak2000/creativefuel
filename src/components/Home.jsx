@@ -21,7 +21,7 @@ const Home = () => {
     display: "none",
   });
 
-  const url = "http://localhost:3001/test_type";
+  const url = "https://creativefuel.onrender.com/test_type";
   useEffect(() => {
     getTestTypes();
   }, []);
@@ -35,7 +35,7 @@ const Home = () => {
       });
     });
   }
-  const url1 = "http://localhost:3001/test_mast";
+  const url1 = "https://creativefuel.onrender.com/test_mast";
   useEffect(() => {
     getTesters();
   }, []);
@@ -51,7 +51,7 @@ const Home = () => {
   }
 
   function selectTester(id) {
-    const url2 = `http://localhost:3001/test_mast?id=${id}`;
+    const url2 = `https://creativefuel.onrender.com/test_mast?id=${id}`;
     fetch(url2).then((result) => {
       result.json().then((response) => {
         // console.log("Result", response);
@@ -97,7 +97,7 @@ const Home = () => {
       mobno,
       alternativeno,
     };
-    fetch(`http://localhost:3001/test_mast/${id}`, {
+    fetch(`https://creativefuel.onrender.com/test_mast/${id}`, {
       method: "PUT",
       headers: {
         Accept: "application/json",
@@ -119,7 +119,7 @@ const Home = () => {
 
   function deleteTester(id) {
     console.log(id);
-    fetch(`http://localhost:3001/test_mast/${id}`, {
+    fetch(`https://creativefuel.onrender.com/test_mast/${id}`, {
       method: "DELETE",
     }).then((result) => {
       result.json().then((result) => {
@@ -130,7 +130,7 @@ const Home = () => {
   }
 
   function getTesterByTestTypes(testerid) {
-    fetch(`http://localhost:3001/test_mast`, {
+    fetch(`https://creativefuel.onrender.com/test_mast`, {
       method: "GET",
     }).then((result) => {
       result.json().then((result) => {

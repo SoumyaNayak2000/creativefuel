@@ -15,7 +15,7 @@ const AllTest = () => {
   });
   const [showTable, setShowTable] = useState(true);
 
-  const url = "http://localhost:3001/test_type";
+  const url = "https://creativefuel.onrender.com/test_type";
   useEffect(() => {
     getTable();
   }, []);
@@ -35,7 +35,7 @@ const AllTest = () => {
     });
   }
   function selectScenario(id) {
-    const url = `http://localhost:3001/test_type?id=${id}`;
+    const url = `https://creativefuel.onrender.com/test_type?id=${id}`;
     fetch(url).then((result) => {
       result.json().then((response) => {
         setId(response[0].id);
@@ -52,7 +52,7 @@ const AllTest = () => {
 
   function updateScenario(id) {
     const item = { id, name, date };
-    fetch(`http://localhost:3001/test_type/${id}`, {
+    fetch(`https://creativefuel.onrender.com/test_type/${id}`, {
       method: "PUT",
       headers: {
         Accept: "application/json",
@@ -74,7 +74,7 @@ const AllTest = () => {
 
   function deleteScenario(id) {
     console.log(id);
-    fetch(`http://localhost:3001/test_type/${id}`, {
+    fetch(`https://creativefuel.onrender.com/test_type/${id}`, {
       method: "DELETE",
     }).then((result) => {
       result.json().then((result) => {

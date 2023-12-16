@@ -21,7 +21,7 @@ const AddTestType = () => {
 
     formData.set("date", testDate);
 
-    const url = "http://localhost:3001/test_type";
+    const url = "https://creativefuel.onrender.com/test_type";
     fetch(url, {
       method: "POST",
       headers: {
