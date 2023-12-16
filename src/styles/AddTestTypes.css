@@ -1,0 +1,128 @@
+/* add scenarion main container */
+
+.main-addscene {
+  margin-left: 250px; /* Same as the width of the sidenav */
+  font-size: 20px; /* Increased text to enable scrolling */
+  padding: 0px 10px;
+  background-color: black;
+  height: 100vh;
+  color: white;
+
+} 
+.main-addscene h2{
+  padding: 1rem;
+  margin-left:px;
+padding: 15px;
+} 
+
+
+/* Add scenario input container */
+.container2{
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 50%;
+  height: 160px;
+  margin-left: 250px;
+  background-color: #323232;
+  border-radius: 9px;
+  margin-top: 15px;
+}
+
+.container2 label{
+  font-size: 1rem;
+}
+
+.container2 input{
+  font-size: 15px;
+  width:13rem;
+  height: 30px;
+  border-radius: 5px;
+  background: black;
+  color: white;
+  border: 2px solid #4f4d4d;
+  text-align: center;
+}
+
+
+/* Add scenarion button container */
+.buttonContainer{
+  display: flex;
+   align-items: center;
+   justify-content: space-around;
+   width: 25%;
+   height: 30px;
+   margin-left: 250px;
+   margin-top: 10px;
+}
+
+#add{
+  width: 70px;
+  height: 30px;
+  border-radius: 9px;
+  border: 1px solid #5cb85c;
+  background-color: #5cb85c;
+  color: white;
+}
+#add:hover{
+  cursor: pointer;
+  background-color: #68bb68 ;
+  color: black;
+}
+#reset{
+  width: 70px;
+  height: 30px;
+  border-radius: 9px;
+  border: 1px solid #e27933;
+  background-color: #e27933;
+  color: white;
+}
+
+#reset:hover{
+  cursor: pointer;
+  background-color: #e3884b ;
+  color: black;
+}
+
+#go-back{
+  width: 70px;
+  height: 30px;
+  border-radius: 9px;
+  border: 1px solid #438ca9;
+  background-color: #438ca9;
+  color: white;
+}
+
+#go-back:hover{
+  cursor: pointer;
+  background-color: #5291aa ;
+  color: black;
+}
+
+/* Mediaquery */
+@media(max-width:700px) {
+  .main-addscene {
+    margin-left: 0;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    /* margin-top: 5rem; */
+  }
+  .main-addscene h2 {
+    margin-top: 5rem;
+  }
+  .container2{
+    width: 20rem;
+    display: flex;
+    flex-direction: column;
+    padding: .5rem;
+    margin-left: 2rem;
+    margin-top: 1rem;
+  }
+  .buttonContainer{
+    margin-left: 2rem;
+    width: 20rem;
+  }
+}
+
+

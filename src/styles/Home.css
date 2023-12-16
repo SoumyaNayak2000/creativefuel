@@ -1,0 +1,168 @@
+  /* Main Home Container */
+  .main-Home {
+    margin-left: 250px; /* Same as the width of the sidenav */
+    font-size: 20px; /* Increased text to enable scrolling */
+    padding: 0px 10px;
+    background-color: black;
+    color: white;
+    height: 100vh;
+  } 
+  
+  /* Test name select tag */
+  .homeScenario{
+    display: flex;
+    flex-direction: column;
+    /* border: 1px solid; */
+    width: 15rem;
+    text-align: center;
+    padding: 1rem;
+  }
+  .homeScenario>label{
+    font-size: 1.3rem;
+    padding: .5rem;
+    margin: .2rem;
+  }
+  .homeScenario>select{
+    width: 15rem;
+    height: 2rem;
+    font-size: 1rem;
+    text-align: center;
+    border-radius: .5rem;
+  }
+
+  /* Home TABLES */
+  .home-table{
+    background-color:#333333 ;
+    width: max-content;
+    padding: .3rem;
+    margin: 1rem;
+    border-radius: .7rem;
+    letter-spacing: .1rem;
+  }
+  
+
+  .home-btns{
+    display: flex;
+    width: max-content;
+    height: 2rem;
+    justify-content: center;
+    align-items: center;
+    margin-left: 45rem;
+    padding: .5rem;
+  }
+
+  .stopSimulation{
+    background-color: #438ca9;
+    border: 1px solid black;
+    border-radius: 6px;
+    width: 7rem;
+    height: 1.9rem;
+    color: white;
+  }
+
+.stopSimulation:hover{
+  background-color: #5f96ac;
+  cursor: pointer;
+}
+
+.startSimulation{
+  background-color: #39b739;
+  border: 1px solid black;
+  border-radius: 6px;
+  width: 7rem;
+  height: 1.9rem;
+  color: white;
+  margin-right: .5rem;
+}
+.startSimulation:hover{
+background-color: #5cb85c;
+cursor: pointer;
+}
+
+/* vehicle update page */
+
+.tester-update{
+  display: flex;
+  justify-content: space-around;
+  text-align: center;
+  width: 40rem;
+  flex-wrap: wrap;
+  padding: 1.5rem;
+  color: black;
+  border-radius: 5px;
+  font-size: 1rem;
+  font-weight: 600;
+  z-index: 10;
+  background-color: #d9d9d9;
+  
+}
+.tester-update h2{
+  width: 34rem;
+  font-size: 1.5rem;
+  border-radius: 7px;
+  background-color: darkkhaki;
+}
+.tester-update label{
+  font-size: 1rem;
+  display: block;
+  padding: .4rem;
+}
+.tester-update input{
+  box-sizing: border-box;
+  border-radius: .5rem;
+  border: 1px solid black;
+  padding: .5rem 1rem;
+  outline: none;
+  margin: 0.2rem 0;
+  font-size: .9rem;
+  font-weight: 600;
+}
+
+.tester-update button{
+  padding: .3rem 0.8rem;
+  margin-top: 0.5rem;
+  background-color: #39b739;
+  border-radius: .8rem;
+  border:2px solid #39b739;
+  color: white;
+}
+.tester-update button:hover{
+  cursor: pointer;
+  background-color: #5cb85c;
+}
+
+
+/* Mediaqueries */
+
+@media(max-width:700px) {
+
+  .main-Home{
+    margin-left: 0;
+    margin-top: 3rem;
+    height: 100vh;
+    
+  }
+  .home-table{
+    overflow-x: auto;
+    padding: 0rem;
+    margin: 1rem;
+    border-radius: 0.5rem;
+    letter-spacing: 0rem;
+    width: 90%;
+    
+  }
+  .tableMain{
+  border-collapse: collapse;
+  border-spacing: 0;
+  width: 50%;
+  border: 1px solid #ddd;
+  }
+  .table-heading , .table-data{
+    text-align: left;
+  padding: 8px;
+  }
+
+  .home-btns{
+    margin-left: 0;
+  }
+}
